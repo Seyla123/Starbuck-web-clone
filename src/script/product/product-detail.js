@@ -359,17 +359,17 @@ contentProductDetail.innerHTML = `
 <!-- body write here -->
 
 <div class="bg-[#1e3932]   w-full flex justify-center lg:justify-start lg:flex-col">
-<div class=" h-full p-6 md:ml-[78px] bg-[#1e3932] flex flex-col lg:flex-row ">
+<div class=" h-full md:p-6 md:ml-[78px] bg-[#1e3932] flex flex-col lg:flex-row ">
     <div class="bg-[#1e3932] flex items-center justify-center w-full max-w-[420px]">
         <img id="mainImg" class="max-w-[300px]"
             src="${img}"
             alt="">
     </div>
-    <div class="bg-[#1e3932] flex p-8 items-start gap-4 w-full flex-col justify-center max-w-[420px]">
-        <h2 class="text-4xl font-bold sodan text-white" id="titleProduct">${productName}</h2>
+    <div class="bg-[#1e3932] flex p-8 items-center lg:items-start gap-4 w-full flex-col justify-center max-w-[420px]">
+        <h2 class="text-2xl md:text-4xl font-bold sodan text-white " id="titleProduct">${productName}</h2>
         
             <div class="flex gap-1  justify-center w-full items-center lg:justify-start">
-                <p class="text-2xl sodan text-gray-400 " ><span id="textCalories">200</span> calories </p>
+                <p class="text-[19px] md:text-2xl sodan text-gray-400 " ><span id="textCalories">200</span> calories </p>
                 <span class=" text-gray-400">
                     <svg aria-hidden="true" class="valign-middle absoluteCenter" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 16px; height: 16px; overflow: visible; fill: currentcolor;"><path d="M12 1.35C6.118 1.35 1.35 6.118 1.35 12c0 5.882 4.768 10.65 10.65 10.65 5.882 0 10.65-4.768 10.65-10.65 0-5.882-4.768-10.65-10.65-10.65zm0 1.5c5.053 0 9.15 4.097 9.15 9.15s-4.097 9.15-9.15 9.15S2.85 17.053 2.85 12 6.947 2.85 12 2.85zm-.75 7.928v6.486c0 .414.336.75.75.75s.75-.336.75-.75v-6.486c0-.414-.336-.75-.75-.75s-.75.336-.75.75zm1.5-3.056v-.61c0-.415-.336-.75-.75-.75s-.75.335-.75.75v.61c0 .414.336.75.75.75s.75-.336.75-.75z"></path><circle class="sb-icon-hover" cx="50%" cy="50%" fill="transparent" r="75%"></circle></svg></span>
 
