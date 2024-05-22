@@ -32,7 +32,7 @@ const createInputField = (labelText, labelReq,customType) => {
 
 
 // Class definition for the custom input field component
-export class InputField extends HTMLElement {
+class InputField extends HTMLElement {
     constructor() {
         super();
         this.rippleEffect = rippleEffect.bind(this);

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Gift Cards: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+    <!-- Linking CSS files -->
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- Linking custom font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <!-- Linking Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <!-- Preconnecting to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Linking Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <navbar-component isGiftCardPage="true"></navbar-component>
+    <!-- content -->
+    <section class="w-full my-10">
+        <div class="md:ml-[78px] pl-6  flex Gift cards flex-col  items-start justify-between ">
+            <h2 class="uppercase font-bold text-sm md:text-md">Gift cards</h2>
+            <button class="pr-8 py-4">
+                <a href="" class="text-[#00000094] text-sm md:text-md uppercase font-bold" id="title">jjjsdd</a>
+            </button>
+        </div>
+        <section id="giftCardCategory" class="max-w-full md:ml-[78px] pl-6 pr-8 grid grid-cols-2 md:grid-cols-4  gap-x-3 gap-y-6">
+            <!-- Card Carousel -->
+            <div class="rounded-lg md:rounded-2xl overflow-hidden shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:-translate-y-4 duration-500">
+                <a href="../../pages/gift-card/gift-card-detail.html?${item}" class="w-full">
+                    <img src="../../images//gift-card/image copy 11.png" class="object-cover w-full h-full">
+                </a>
+            </div>
+            <div class="rounded-lg md:rounded-2xl overflow-hidden shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:-translate-y-4 duration-500">
+                <a href="../../pages/gift-card/gift-card-detail.html?${item}" class="w-full">
+                    <img src="../../images//gift-card/image copy 12.png" class="object-cover w-full h-full">
+                </a>
+            </div>
+            <div class="rounded-lg md:rounded-2xl overflow-hidden shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:-translate-y-4 duration-500">
+                <a href="../../pages/gift-card/gift-card-detail.html?${item}" class="w-full">
+                    <img src="../../images//gift-card/image copy 13.png" class="object-cover w-full h-full">
+                </a>
+            </div>
+        </section>
+    </section>
+    <!-- footer -->
+    <div class="md:ml-[78px]">
+        <footer-component></footer-component>
+    </div>
+</body>
+<script type="module" src="./index.js"></script>
+<script type="module" src="../../script/components/layout.js"></script>
+</html>

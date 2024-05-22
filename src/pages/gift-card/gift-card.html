@@ -207,30 +207,27 @@
 <div class="md:ml-[78px] pl-6 pr-8">
 	<footer-full-w-layout class="footer-full-w-layout"></footer-full-w-layout>
 </div>
-<div id="checkBalanceContent" class="duration-300 z-[100] w-[30%] pointer-events-none h-screen fixed top-0 right-0 opacity-0 scale-[120%]  bg-white ">
-
+<!-- pointer-events-none  opacity-0 scale-[120%] -->
+<div id="checkBalanceContent" class="duration-300 z-[100] w-[30%] pointer-events-none  opacity-0 scale-[120%]  h-screen fixed top-0 right-0  bg-white ">
 	<div class=" w-full space-y-3 px-10 mt-12">
 		<div class="w-full flex justify-end py-8">
 			<button class="checkBalanceBtn "><svg aria-hidden="true" class="valign-middle absoluteCenter" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 24px; height: 24px; overflow: visible; fill: currentcolor;"><path d="M13.06 12l5.72-5.72c.292-.292.292-.767 0-1.06-.294-.293-.768-.293-1.06 0L12 10.94 6.28 5.22c-.293-.293-.767-.293-1.06 0-.293.293-.293.768 0 1.06L10.94 12l-5.72 5.72c-.293.292-.293.767 0 1.06.146.146.338.22.53.22s.384-.074.53-.22L12 13.06l5.72 5.72c.145.146.337.22.53.22.19 0 .383-.074.53-.22.292-.293.292-.768 0-1.06L13.06 12z"></path><circle class="sb-icon-hover" cx="50%" cy="50%" fill="transparent" r="75%"></circle></svg></button>
 		</div>
 		<h3 class="text-2xl font-semibold">Check balance</h3>
 		<hr class=" bg-[#D4E9E2] h-[4px] rounded-sm">
-
-			<input-component
-			title="Card number"
-			req="Please enter a card number."
-			></input-component>
-
-		<span class="flex gap-2 items-center"><svg aria-hidden="true" class="valign-middle valign-middle mr2" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 16px; height: 16px; overflow: visible; fill: currentcolor;"><path d="M12 1.35C6.118 1.35 1.35 6.118 1.35 12c0 5.882 4.768 10.65 10.65 10.65 5.882 0 10.65-4.768 10.65-10.65 0-5.882-4.768-10.65-10.65-10.65zm0 1.5c5.053 0 9.15 4.097 9.15 9.15s-4.097 9.15-9.15 9.15S2.85 17.053 2.85 12 6.947 2.85 12 2.85zm-.75 7.928v6.486c0 .414.336.75.75.75s.75-.336.75-.75v-6.486c0-.414-.336-.75-.75-.75s-.75.336-.75.75zm1.5-3.056v-.61c0-.415-.336-.75-.75-.75s-.75.335-.75.75v.61c0 .414.336.75.75.75s.75-.336.75-.75z"></path></svg>
-		<p>No spaces or dashes</p></span>
-		<input-component
-		title="Security code"
-		req="Please enter a security code."
-		></input-component>
-		<div class="w-full flex justify-end">
-			<button class="py-1.5 px-4 rounded-full bg-black text-white">Check Balance</button>
-		</div>
-	   
+			<input-field-component 
+			labelText="Card number" 
+			labelReq="Please enter a card number.">
+			</input-field-component>
+			<span class="flex gap-2 items-center"><svg aria-hidden="true" class="valign-middle valign-middle mr2" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 16px; height: 16px; overflow: visible; fill: currentcolor;"><path d="M12 1.35C6.118 1.35 1.35 6.118 1.35 12c0 5.882 4.768 10.65 10.65 10.65 5.882 0 10.65-4.768 10.65-10.65 0-5.882-4.768-10.65-10.65-10.65zm0 1.5c5.053 0 9.15 4.097 9.15 9.15s-4.097 9.15-9.15 9.15S2.85 17.053 2.85 12 6.947 2.85 12 2.85zm-.75 7.928v6.486c0 .414.336.75.75.75s.75-.336.75-.75v-6.486c0-.414-.336-.75-.75-.75s-.75.336-.75.75zm1.5-3.056v-.61c0-.415-.336-.75-.75-.75s-.75.335-.75.75v.61c0 .414.336.75.75.75s.75-.336.75-.75z"></path></svg>
+				<p>No spaces or dashes</p></span>
+			<input-field-component 
+			labelText="Security code" 
+			labelReq="Please enter a security code.">
+			</input-field-component>
+			<div class="w-full flex justify-end">
+				<button class="py-1.5 px-4 rounded-full bg-black text-white">Check Balance</button>
+			</div>
 	</div>
 </div>
 <div id="blurBg" class="checkBalanceBtn h-screen w-full pointer-events-none fixed top-0 right-0 bg-black opacity-0  z-[99]">
@@ -241,8 +238,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
 	<script type="module" src="../../script/layout/layout.js"></script>
 	<script type="module" src="../../script/gift-card/array.js"></script>
-	<script src="../../script/gift-card/checkBalance.js"></script>
-    <script src="../../script/gift-card/inputComponent.js"></script>
+	<script src="./checkBalance.js"></script>
+    <script src="../../script/components/inputComponent.js"></script>
+	<script type="module" src="../../script/components/layout.js"></script>
 
 	
 </html>
